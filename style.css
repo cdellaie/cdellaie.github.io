@@ -1,28 +1,36 @@
+﻿html {
+    background: transparent;
+    overflow-y: scroll;
+    height: 100%;
+    /*font: 1em Lato, 1em sans-serif;*/
+}
+
 body
 {
-    /*background-image: url("Hofstadter.png") ;*/
 	background-repeat : no-repeat;
-	background-attachment : fixed ;
-	background-color : rgb(204,204,255);
-	/*background-position : bottom right;*/
+	background-attachment : scroll ;
+	background-color : white; /* rgb(204,204,255);*/
+    	/*background-position : bottom right;*/
+	/*background-image: url("Hofstadter.png") ;*/
 }
 
 header
 {
 	position: fixed;
-	top: 0px;
-	height: 150px;
-	width :100%;
+	top: 0%;
+	height: 100%;
+	width :25%;
 	padding: 1em;
-	margin-top: 0;
-	/*background-image: url("Hofstadter.png") ;*/
-	background-color : transparent;
+	margin-top: 0%;
+	margin-left: 5%;
+	background-color : rgb(204,204,255);
 	background-repeat : no-repeat;
 	color: white;
-	background-position: 100% 50%; 
+	background-position: 0% 0%; 
 	
 	font-family: 'Arial-BoldMT', 'Arial',sans-serif;   
 	color: rgb(94,81,81);	
+	/*background-image: url("Hofstadter.png") ;*/
 }
 
 nav
@@ -30,22 +38,25 @@ nav
 	position: fixed;    	
 	color: white;
 	float: left;
-    	width: 150px;
+	height : 100%;
+    	width: 25%;
+	padding: 1em;
 	margin-top: 10%;
-    	/*border: 1px solid black;*/
-	
+	margin-left: 0%;
 	font-family: 'Arial-BoldMT', 'Arial',sans-serif;   
 	color: rgb(94,81,81);
+	background-color : transparent;
+	/*border: 1px solid black;*/
 }
 
 section
 {
-	position: fixed; 
-	top : 200px;   	
-	margin-left: 310px;
-	margin-bottom: 20px;
-	height: 60%;
-	width:60%;
+	*/position: fixed;*/ 
+	top : 0%;   	
+	margin-left: 40%;
+	/*margin-bottom: 20px;*/
+	height: 100%;
+	width:55%;
 	
     	/*border: 1px solid black;*/
 	padding: 15px;
@@ -54,13 +65,40 @@ section
 	font-family: 'Arial-BoldMT', 'Arial',sans-serif;  
 	color: rgb(94,81,81);
 	background-color: white;
+	*/overflow-y : scroll;*/
+	
 }
+
+nav ul {
+    margin: 0;
+    padding-left: 1em;
+    list-style: none;
+}
+
+nav ul li{
+   	padding-top: 1em;
+	font-size: 150%;
+   	/*text-shadow: 0px 1px 0px #fff;*/
+}
+
+nav a:hover {
+    color: black;
+}
+
+
+nav a {
+    color: inherit;
+    font: inherit;
+    text-decoration: inherit;
+}
+
+
 
 footer
 {
 	position : fixed;
 	top: 90%;	
-	margin-left:310px;
+	margin-left:10%;
 	/*border: 1px solid black;*/
 	color: white;
 	font: .8em monospace;
@@ -80,4 +118,8 @@ ul
 }
 
 
-
+.title
+{
+	text-align: center;
+	font-style:italic;
+}
